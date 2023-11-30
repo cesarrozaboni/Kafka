@@ -1,0 +1,7 @@
+/*Baixar os pacotes do docker*/
+docker compose pull
+
+/*Iniciar os containers*/
+docker start $(docker ps -a -q)
+
+/*O kafdrop sera aberto na porta configurada no docker.compose.yml (localhost:19000)*/
